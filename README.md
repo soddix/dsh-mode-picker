@@ -1,16 +1,16 @@
 # dsh-mode-picker
 
-新会话开局选模式。开一个新会话时锁定输入框，把部署里的全部 agent preset 以按钮阵列铺在输入框附近；点一个，按钮收起、输入框解锁，这个空白会话就切到你选的模式。
+新会话开局选模式。开一个新会话时锁定输入框，把部署里的全部 agent 模式 以按钮阵列铺在输入框附近；点一个，按钮收起、输入框解锁，这个空白会话就切到你选的模式。
 
 ## 为什么存在
 
 DSH 自带的模式 chip 是个下拉菜单，且只负责「暂存一个选择、等下一个空白会话来认领」。本插件把这件事换成一个显式的开局闸门：不选不发车，选错了还能改。
 
-生态检索结论（2026-09）：GitHub `dsh-plugin` topic 下没有实现该形态的插件。唯一近亲 [dsh-preset-switch](https://github.com/aorucshiea/dsh-preset-switch) 做的是「绕过官方的 blank-session lock、在会话内切 preset」，与本插件的方向相反。
+截至 2026-09 ：GitHub `dsh-plugin` topic 下没有实现该形态的插件。唯一近亲 [dsh-preset-switch](https://github.com/aorucshiea/dsh-preset-switch) 做的是「绕过官方的 blank-session lock、在会话内切 preset」，与本插件的方向相反。
 
 ## 用的是官方既有接口
 
-不新造机制，全部走官方留出的缝：
+不新造机制，全部走官方：
 
 | 作用 | 接口 | 来源 |
 | --- | --- | --- |
