@@ -1,0 +1,7 @@
+# dsh-mode-picker bundle patch: mounts the plugin row into the web composition.
+# The host half is intentionally inert — all behaviour lives in the client half,
+# which reaches the host through the official Remote API (ctx.remote.agentPresets)
+# rather than through a package-private RPC.
+- insert:
+    - id: dsh-mode-picker
+      name: 'dsh-mode-picker'

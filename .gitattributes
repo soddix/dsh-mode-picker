@@ -1,0 +1,4 @@
+# Store every text file with LF, on every platform. These files are read by a
+# Node process and a plugin loader; a Windows working tree rewritten to CRLF
+# only creates diff noise.
+* text=auto eol=lf

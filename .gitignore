@@ -1,0 +1,14 @@
+# dependencies / build output
+node_modules/
+
+# this plugin's own diagnostic sink (local debugging output, not source)
+diag.log
+*.log
+
+# local backups written by dsh-plugin-menu before it edits a profile
+*.bak-*
+*.rp-merged.bak
+
+# OS noise
+.DS_Store
+Thumbs.db

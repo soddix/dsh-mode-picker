@@ -1,0 +1,55 @@
+{
+  "name": "dsh-mode-picker",
+  "version": "0.1.0",
+  "description": "新会话开局选模式：新会话页锁定输入框，在输入框附近以按钮阵列列出全部 agent preset；选定后按钮收起、输入框解锁，并把这个空白会话切换到所选模式。 · Pick the agent preset when starting a new session: a button grid instead of a dropdown, locked until you choose.",
+  "license": "MIT",
+  "author": "soddix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soddix/dsh-mode-picker.git"
+  },
+  "homepage": "https://github.com/soddix/dsh-mode-picker#readme",
+  "bugs": {
+    "url": "https://github.com/soddix/dsh-mode-picker/issues"
+  },
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/*.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "agent-preset",
+    "new-session",
+    "mode-picker"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "react",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "react": "^18.3.1"
+  }
+}
