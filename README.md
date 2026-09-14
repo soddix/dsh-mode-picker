@@ -1,6 +1,10 @@
+**中文** | [English](README.en.md)
+
 # dsh-mode-picker
 
 新会话开局选模式。开一个新会话时锁定输入框，把部署里的全部 agent preset 以按钮阵列铺在输入框附近；点一个，按钮收起、输入框解锁，这个空白会话就切到你选的模式。
+
+> **In one line:** pick the agent preset when you start a session — a locked composer and a grid of every preset in the deployment, instead of a dropdown that only stages a choice.
 
 ## 为什么存在
 
